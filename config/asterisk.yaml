@@ -1,0 +1,15 @@
+outgoing: /var/spool/asterisk/outgoing
+template: |
+    Channel: Local/{{.Phone}}@chocolate-out
+    MaxRetries: 0
+    RetryTime: 0
+    WaitTime: 10
+    Context: chocolate-answer
+    Extension: 2222
+    Callerid: 2222
+    Account: autodialer
+    Priority: 1
+phones:
+  pyaterochka:
+  middle:
+  ryabinoviy:
